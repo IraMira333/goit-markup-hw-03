@@ -220,7 +220,7 @@ body {
  display: flex;
 }
 .main-about .item {
- width: calc((100%-3 * 24px) / 4);
+ width: calc((100% - 3 * 24px) / 4);
 }
 .main-about .item:not(:last-child) {
  margin-right: 24px;
