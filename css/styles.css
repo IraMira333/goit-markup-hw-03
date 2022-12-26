@@ -22,6 +22,7 @@
  --footer-bgc: #2e2f42;
  --footer-text-color: #e7e9fc;
  --footer-logo-color: #f4f4fd;
+ --border-color: #e7e9fc;
 }
 
 body {
@@ -55,6 +56,9 @@ body {
  letter-spacing: 0.04em;
  cursor: pointer;
  border-radius: 4px;
+}
+.block {
+ display: block;
 }
 
 /* Logo */
@@ -147,12 +151,11 @@ body {
 /* Hero */
 
 .hero {
- background-color: var(--hero-bgc);
-}
-.main-hero {
  padding-top: 188px;
  padding-bottom: 188px;
+ background-color: var(--hero-bgc);
 }
+
 .hero-title {
  margin-top: 0;
  margin-bottom: 48px;
@@ -261,12 +264,11 @@ body {
 }
 
 .section-third {
+ padding-top: 120px;
  padding-bottom: 120px;
  background-color: var(--bgc-section-third);
 }
-.section-third .title-second {
- padding-top: 120px;
-}
+
 .team-card {
  text-align: center;
  background-color: var(--team-card-bgc);
@@ -275,11 +277,8 @@ body {
  border-radius: 0px 0px 4px 4px;
 }
 
-.team-card .title-third {
- margin-top: 32px;
-}
-
-.team-card .text {
+.team-card-text {
+ padding-top: 32px;
  padding-bottom: 32px;
 }
 
@@ -311,16 +310,23 @@ body {
  letter-spacing: 0.03em;
  text-transform: uppercase;
 }
+
 /* Portfolio */
+
+.section-portfolio {
+ padding-bottom: 120px;
+ padding-top: 96px;
+}
+
 .filter {
  display: flex;
  justify-content: center;
- padding-top: 96px;
- padding-bottom: 72px;
+ margin-bottom: 72px;
 }
 .filter .item:not(:last-child) {
  margin-right: 24px;
 }
+
 .portfolio-btn {
  color: var(--acsent);
  background-color: var(--btn-fon-cloud);
@@ -337,14 +343,12 @@ body {
   0px 2px 2px rgba(0, 0, 0, 0.12);
  border-radius: 4px;
 }
-.block {
- display: block;
-}
+
 .work-example {
  display: flex;
  flex-wrap: wrap;
 }
-/* border: 1px solid #e7e9fc; */
+
 .work-example .work-item {
  margin-right: 24px;
  margin-bottom: 48px;
@@ -352,21 +356,14 @@ body {
 .work-example .work-item:nth-child(3n + 3) {
  margin-right: 0;
 }
-
 .work-example .work-item:nth-last-child(-n + 3) {
- margin-bottom: 120px;
-}
-.border-prtf .title-third {
- padding-top: 32px;
- margin-left: 16px;
-}
-
-.work-item .text {
- margin-bottom: 32px;
- margin-left: 16px;
+ margin-bottom: 0px;
 }
 
 .border-prtf {
- border: 1px solid #e7e9fc;
+ padding-top: 32px;
+ padding-bottom: 32px;
+ padding-left: 16px;
+ border: 1px solid var(--border-color);
  border-top: none;
 }
